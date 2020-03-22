@@ -54,7 +54,7 @@ namespace Lab1.Controllers
             }
             catch
             {
-                return JsonConvert.SerializeObject("");
+                region = "";
             }
             return JsonConvert.SerializeObject(region);
         }
@@ -62,12 +62,7 @@ namespace Lab1.Controllers
         [HttpGet("fib/{n}")]
         public ActionResult<string> Fibonacci(int n)
         {
-            return JsonConvert.SerializeObject(Fib(n));
-        }
-
-        public int Fib(int n)
-        {
-            return n > 1 ? Fib(n - 1) + Fib(n - 2) : n == 1 ? 1 : 0;
+            return JsonConvert.SerializeObject((long)Math.Round((Math.Pow((1 + Math.Sqrt(5)) / 2, n) - Math.Pow((1 - Math.Sqrt(5)) / 2, n)) / Math.Sqrt(5))); //формула Бине
         }
     }
 }
