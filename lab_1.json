@@ -1,0 +1,27 @@
+[
+    {
+    	"url": "https://localhost:44377/api/num/34668",
+        "response": "Тридцать четыре тысячи шестьсот шестьдесят восемь",
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44377/api/equation?a=1&b=4&c=-1",
+        "response": [0.23606797749978981,-4.23606797749979],
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44377/api/dotw?date=12.12.2028",
+        "response": "вторник",
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44377/api/region/5",
+        "response": "Республика Дагестан",
+        "method": "GET"
+    },
+    {
+    	"url": "https://localhost:44377/api/fib/15",
+        "response": 610,
+        "method": "GET"
+    },
+]
